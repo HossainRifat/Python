@@ -1,0 +1,11 @@
+def BinarySearch(A, l, r, key):
+	while (l < r):
+		m = l + (r - l) // 2
+		if A[m] == key: #first comparison
+			return m
+		if A[m] < key: # second comparison
+			l = m + 1
+		else:
+			r = m - 1
+	return -1
+
